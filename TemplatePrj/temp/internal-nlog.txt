@@ -1,0 +1,417 @@
+2021-11-06 10:50:00.3903 Info Message Template Auto Format enabled
+2021-11-06 10:50:00.4324 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 10:50:00.5330 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 10:50:00.6902 Info Validating config: TargetNames=db, ConfigItems=33, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 10:50:01.2616 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 10:51:56.0440 Info Message Template Auto Format enabled
+2021-11-06 10:51:56.0807 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 10:51:56.1686 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 10:51:56.2529 Info Validating config: TargetNames=db, ConfigItems=33, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 10:51:56.7429 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 10:53:39.4180 Info Message Template Auto Format enabled
+2021-11-06 10:53:39.4480 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 10:53:39.5548 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 10:53:39.6341 Info Validating config: TargetNames=db, ConfigItems=33, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 10:53:40.0796 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 10:55:39.5056 Info Message Template Auto Format enabled
+2021-11-06 10:55:39.5388 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 10:55:39.6231 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 10:55:39.6966 Info Validating config: TargetNames=db, ConfigItems=33, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 10:55:40.1421 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 10:59:00.2943 Info Message Template Auto Format enabled
+2021-11-06 10:59:00.3233 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 10:59:00.4040 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 10:59:00.5490 Info Validating config: TargetNames=db, ConfigItems=33, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 10:59:00.9832 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:13:41.2397 Info Message Template Auto Format enabled
+2021-11-06 11:13:41.2671 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:13:41.3812 Info Adding target FileTarget(Name=allfile)
+2021-11-06 11:13:41.4001 Info Adding target FileTarget(Name=ownFile-web)
+2021-11-06 11:13:41.4152 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 11:13:41.4945 Info Validating config: TargetNames=allfile, db, ConfigItems=88, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:13:41.5283 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2021-11-06 11:13:42.1438 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:18:12.4014 Info Message Template Auto Format enabled
+2021-11-06 11:18:12.5131 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:18:12.8021 Info Adding target FileTarget(Name=allfile)
+2021-11-06 11:18:12.9728 Info Adding target FileTarget(Name=ownFile-web)
+2021-11-06 11:18:13.0008 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 11:18:13.1299 Info Validating config: TargetNames=allfile, db, ConfigItems=88, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:18:13.1478 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2021-11-06 11:18:13.8032 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:20:02.2953 Info Message Template Auto Format enabled
+2021-11-06 11:20:02.3192 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:20:02.4290 Info Adding target FileTarget(Name=allfile)
+2021-11-06 11:20:02.4565 Info Adding target FileTarget(Name=ownFile-web)
+2021-11-06 11:20:02.4713 Info Adding target DatabaseTarget(Name=db)
+2021-11-06 11:20:02.5216 Info Validating config: TargetNames=allfile, db, ConfigItems=88, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:20:02.5363 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2021-11-06 11:20:02.9969 Error DatabaseTarget(Name=db): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:24:03.8262 Info Message Template Auto Format enabled
+2021-11-06 11:24:03.8700 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:24:04.0193 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:24:04.0344 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:24:04.0505 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:24:04.1319 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:24:05.0093 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:26:01.9202 Info Message Template Auto Format enabled
+2021-11-06 11:26:01.9749 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:26:02.1085 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:26:02.1247 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:26:02.1419 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:26:02.2130 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:26:03.2383 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:27:50.1373 Info Message Template Auto Format enabled
+2021-11-06 11:27:50.1587 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:27:50.2739 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:27:50.2889 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:27:50.2977 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:27:50.3826 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:27:51.4895 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:33:18.4714 Info Message Template Auto Format enabled
+2021-11-06 11:33:18.5080 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:33:18.6610 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:33:18.7048 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:33:18.7048 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:33:18.7919 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:33:19.7455 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:35:24.4818 Info Message Template Auto Format enabled
+2021-11-06 11:35:24.5090 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:35:24.6825 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:35:24.6985 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:35:24.7249 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:35:24.8178 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:35:26.2920 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:38:32.5072 Info Message Template Auto Format enabled
+2021-11-06 11:38:32.6094 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:38:32.7742 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:38:32.7912 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:38:32.7998 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:38:33.0275 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=92, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:38:34.5727 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:39:55.8339 Info Message Template Auto Format enabled
+2021-11-06 11:39:55.8608 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:39:55.9903 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:39:56.0081 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:39:56.0923 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=59, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:41:02.2380 Info Message Template Auto Format enabled
+2021-11-06 11:41:02.2885 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:41:02.4255 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:41:02.4458 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:41:02.4745 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:41:02.6049 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=91, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:41:03.7403 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:43:55.9547 Info Message Template Auto Format enabled
+2021-11-06 11:43:55.9822 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:43:56.0905 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:43:56.1076 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:43:56.1286 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:43:56.2284 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=91, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:43:58.0453 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:47:13.8854 Info Message Template Auto Format enabled
+2021-11-06 11:47:13.9083 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:47:14.0014 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:47:14.0014 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:47:14.0195 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:47:14.0655 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=91, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:47:14.7166 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 11:51:10.8207 Info Message Template Auto Format enabled
+2021-11-06 11:51:10.8531 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 11:51:11.0287 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 11:51:11.0566 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 11:51:11.1001 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 11:51:11.1821 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=91, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 11:51:12.7935 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 12:02:22.4795 Info Message Template Auto Format enabled
+2021-11-06 12:02:22.6124 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 12:02:22.7616 Info Adding target AsyncTargetWrapper(Name=allfile)
+2021-11-06 12:02:22.7888 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 12:02:22.8194 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 12:02:22.8988 Info Validating config: TargetNames=allfile, ownFile-web, db, ConfigItems=91, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 12:02:24.3060 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 12:13:12.6086 Info Message Template Auto Format enabled
+2021-11-06 12:13:12.6472 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 12:13:12.7814 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 12:13:12.8155 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 12:13:12.9792 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=66, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 12:13:14.0687 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 12:14:51.8798 Info Message Template Auto Format enabled
+2021-11-06 12:14:51.9209 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 12:14:52.0503 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 12:14:52.0651 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 12:14:52.1439 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 12:14:53.8550 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 12:21:02.7089 Info Message Template Auto Format enabled
+2021-11-06 12:21:02.7564 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 12:21:02.9893 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 12:21:03.0049 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 12:21:03.0818 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 12:21:04.1668 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-06 12:22:39.7294 Info Message Template Auto Format enabled
+2021-11-06 12:22:39.7707 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-06 12:22:39.9476 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-06 12:22:39.9574 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-06 12:22:40.1085 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-06 12:22:41.1150 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-08 09:46:00.9128 Info Message Template Auto Format enabled
+2021-11-08 09:46:00.9951 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-08 09:46:01.3360 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-08 09:46:01.3937 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-08 09:46:01.9060 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\TemplatePrj\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-08 09:46:06.0897 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
+2021-11-08 12:51:10.2990 Info Message Template Auto Format enabled
+2021-11-08 12:51:10.4030 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-08 12:51:10.6002 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-08 12:51:10.6347 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-08 12:51:10.7396 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net5.0\nlog.config
+2021-11-08 12:51:13.4718 Error DatabaseTarget(Name=db_wrapped): Error when writing to database. Exception: System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
