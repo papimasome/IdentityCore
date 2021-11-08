@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using TemplatePrj.Middleware;
 using Microsoft.EntityFrameworkCore;
 using TemplatePrj.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace TemplatePrj
 {
@@ -31,6 +32,9 @@ namespace TemplatePrj
 
             services.AddDbContext<TemplatePrjContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("TemplatePrjContext")));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<TemplatePrjContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +57,7 @@ namespace TemplatePrj
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
