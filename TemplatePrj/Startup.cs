@@ -12,6 +12,7 @@ using TemplatePrj.Middleware;
 using Microsoft.EntityFrameworkCore;
 using TemplatePrj.Data;
 using Microsoft.AspNetCore.Identity;
+using PersianIdentity;
 
 namespace TemplatePrj
 {
@@ -29,7 +30,7 @@ namespace TemplatePrj
         {
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
-
+            
             services.AddDbContext<TemplatePrjContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("TemplatePrjContext")));
             services.AddIdentity<IdentityUser, IdentityRole>(options=>
@@ -51,7 +52,8 @@ namespace TemplatePrj
             })
                 .AddEntityFrameworkStores<TemplatePrjContext>()
                 .AddDefaultTokenProviders()
-                .AddDefaultUI();
+                .AddDefaultUI()
+                .AddErrorDescriber<PersianIdentityErrorDescriber>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
