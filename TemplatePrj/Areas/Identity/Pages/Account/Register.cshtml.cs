@@ -48,6 +48,12 @@ namespace TemplatePrj.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
+            [PageRemote(
+                ErrorMessage = "Email address already exists",
+                AdditionalFields = "__RequestVerificationToken",
+                HttpMethod = "post",
+                PageHandler = "CheckEmail" )]
+            [BindProperty]
             public string Email { get; set; }
 
             [Required]
@@ -109,6 +115,12 @@ namespace TemplatePrj.Areas.Identity.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
+        }
+        public JsonResult OnPostCheckEmail()
+        {
+            var user = _userManager.FindByEmailAsync(Input.Email).Result;
+            var valid = user == null;
+            return new JsonResult(valid);
         }
     }
 }

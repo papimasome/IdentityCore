@@ -15,6 +15,11 @@ namespace TemplatePrj.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
+
+                services.AddAntiforgery(options =>
+                {
+                    options.FormFieldName = "Input.__RequestVerificationToken";
+                });
             });
         }
     }
