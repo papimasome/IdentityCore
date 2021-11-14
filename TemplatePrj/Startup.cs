@@ -13,6 +13,9 @@ using Microsoft.EntityFrameworkCore;
 using TemplatePrj.Data;
 using Microsoft.AspNetCore.Identity;
 using PersianIdentity;
+using TemplatePrj.Models.Settings;
+using TemplatePrj.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace TemplatePrj
 {
@@ -54,6 +57,12 @@ namespace TemplatePrj
                 .AddDefaultTokenProviders()
                 .AddDefaultUI()
                 .AddErrorDescriber<PersianIdentityErrorDescriber>();
+
+            //Mail Setting get from appsetting.json
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            // add email service
+            services.AddTransient<IEmailSender,MailService>();
+            services.AddTransient<IMailService, MailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

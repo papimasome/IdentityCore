@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using TemplatePrj.Models.Settings;
+using TemplatePrj.Services;
 
 namespace TemplatePrj.Areas.Identity.Pages.Account
 {
@@ -23,17 +25,20 @@ namespace TemplatePrj.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly IMailService _mailService;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IMailService mailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _mailService = mailService;
         }
 
         [BindProperty]
@@ -85,7 +90,9 @@ namespace TemplatePrj.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+                    //send welcome email
 
+                   await _mailService.SendWelcomeEmailAsync(new WelcomeRequest() { ToEmail = user.Email, UserName = user.UserName });
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
@@ -103,6 +110,7 @@ namespace TemplatePrj.Areas.Identity.Pages.Account
                     }
                     else
                     {
+                        
                         await _signInManager.SignInAsync(user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }
