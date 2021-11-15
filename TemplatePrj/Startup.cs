@@ -33,10 +33,11 @@ namespace TemplatePrj
         {
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
-            
+            // Add Context
             services.AddDbContext<TemplatePrjContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("TemplatePrjContext")));
-            services.AddIdentity<IdentityUser, IdentityRole>(options=>
+            //Add identity
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 // Default Password settings.
                 options.Password.RequireDigit = true;
@@ -61,8 +62,18 @@ namespace TemplatePrj
             //Mail Setting get from appsetting.json
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
             // add email service
-            services.AddTransient<IEmailSender,MailService>();
+            services.AddTransient<IEmailSender, MailService>();
             services.AddTransient<IMailService, MailService>();
+            //Add external login provider
+            services.AddAuthentication()
+            .AddGoogle("google", opt =>
+            {
+                var googleAuth = Configuration.GetSection("Authentication:Google");
+
+                opt.ClientId = googleAuth["ClientId"];
+                opt.ClientSecret = googleAuth["ClientSecret"];
+                opt.SignInScheme = IdentityConstants.ExternalScheme;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
