@@ -3,23 +3,25 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TemplatePrj.Data;
 
+#nullable disable
+
 namespace TemplatePrj.Migrations
 {
-    [DbContext(typeof(TemplatePrjContext))]
-    [Migration("20211108123610_addIdentity")]
-    partial class addIdentity
+    [DbContext(typeof(ApplicationDbContext))]
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.11")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasDefaultSchema("Identity")
+                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -45,15 +47,16 @@ namespace TemplatePrj.Migrations
                         .HasDatabaseName("RoleNameIndex")
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
-                    b.ToTable("AspNetRoles");
+                    b.ToTable("Role", "Identity");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -69,10 +72,10 @@ namespace TemplatePrj.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetRoleClaims");
+                    b.ToTable("RoleClaims", "Identity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -134,15 +137,16 @@ namespace TemplatePrj.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.ToTable("AspNetUsers");
+                    b.ToTable("User", "Identity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -158,10 +162,10 @@ namespace TemplatePrj.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserClaims");
+                    b.ToTable("UserClaims", "Identity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
                         .HasColumnType("nvarchar(450)");
@@ -180,10 +184,10 @@ namespace TemplatePrj.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserLogins");
+                    b.ToTable("UserLogins", "Identity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -195,10 +199,10 @@ namespace TemplatePrj.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetUserRoles");
+                    b.ToTable("UserRoles", "Identity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -214,15 +218,16 @@ namespace TemplatePrj.Migrations
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
-                    b.ToTable("AspNetUserTokens");
+                    b.ToTable("UserTokens", "Identity");
                 });
 
             modelBuilder.Entity("TemplatePrj.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -234,7 +239,7 @@ namespace TemplatePrj.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Post");
+                    b.ToTable("Post", "Identity");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -246,25 +251,25 @@ namespace TemplatePrj.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserRole<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
                         .WithMany()
@@ -272,16 +277,16 @@ namespace TemplatePrj.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.ApplicationUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

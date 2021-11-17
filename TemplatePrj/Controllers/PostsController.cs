@@ -12,12 +12,12 @@ using TemplatePrj.Models;
 
 namespace TemplatePrj.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class PostsController : Controller
     {
-        private readonly TemplatePrjContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly ILogger _logger;
-        public PostsController(TemplatePrjContext context, ILogger<HomeController> logger)
+        public PostsController(ApplicationDbContext context, ILogger<HomeController> logger)
         {
             _logger = logger;
             _context = context;

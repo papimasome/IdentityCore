@@ -16,6 +16,7 @@ using PersianIdentity;
 using TemplatePrj.Models.Settings;
 using TemplatePrj.Services;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using TemplatePrj.Models;
 
 namespace TemplatePrj
 {
@@ -34,10 +35,10 @@ namespace TemplatePrj
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
             // Add Context
-            services.AddDbContext<TemplatePrjContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("TemplatePrjContext")));
             //Add identity
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 // Default Password settings.
                 options.Password.RequireDigit = true;
@@ -54,7 +55,7 @@ namespace TemplatePrj
                 options.Lockout.MaxFailedAccessAttempts = 5;
                 options.Lockout.AllowedForNewUsers = true;
             })
-                .AddEntityFrameworkStores<TemplatePrjContext>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders()
                 .AddDefaultUI()
                 .AddErrorDescriber<PersianIdentityErrorDescriber>();
