@@ -1,2 +1,9 @@
 # IdentityCore
-asp core identity
+add default role and user
+role manager action
+
+user manager action
+
+email service provider
+
+nlog setting
