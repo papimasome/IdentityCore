@@ -2160,3 +2160,35 @@ Error Number:2812,State:62,Class:16
    at NLog.Targets.DatabaseTarget.WriteLogEventToDatabase(LogEventInfo logEvent, String connectionString)
 ClientConnectionId:d804df8c-e098-4866-896e-7c75160cf67b
 Error Number:2812,State:62,Class:16
+2021-11-20 16:28:44.3700 Info Message Template Auto Format enabled
+2021-11-20 16:28:44.5077 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-20 16:28:44.7110 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-20 16:28:44.7110 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-20 16:28:44.8126 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net6.0\NLog.config
+2021-11-20 16:28:46.8063 Info Configuration initialized.
+2021-11-20 16:28:46.8063 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-11-20 16:28:54.5674 Info AppDomain Shutting down. Logger closing...
+2021-11-20 16:28:54.6763 Info Logger has been shut down.
+2021-11-20 16:50:19.5433 Info Message Template Auto Format enabled
+2021-11-20 16:50:19.6967 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-20 16:50:19.9086 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-20 16:50:20.0415 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-20 16:50:20.1781 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net6.0\NLog.config
+2021-11-20 16:50:22.6497 Info Configuration initialized.
+2021-11-20 16:50:22.7097 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-11-20 16:50:29.7821 Info AppDomain Shutting down. Logger closing...
+2021-11-20 16:50:29.8279 Info Logger has been shut down.
+2021-11-20 17:13:07.5829 Info Message Template Auto Format enabled
+2021-11-20 17:13:12.0028 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-20 17:13:17.9676 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-20 17:13:18.1346 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-20 17:13:18.6345 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net6.0\NLog.config
+2021-11-20 17:13:35.6074 Info Configuration initialized.
+2021-11-20 17:13:35.6074 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.7.11.13229. Product version: 4.7.11+33ed3a9f86277651e93ddf39cda64a046a06778b. GlobalAssemblyCache: False
+2021-11-20 17:13:35.9112 Info Configuring from an XML element in E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net6.0\nlog.config...
+2021-11-20 17:13:35.9303 Info Message Template Auto Format enabled
+2021-11-20 17:13:35.9303 Info Loading assembly: NLog.Web.AspNetCore
+2021-11-20 17:13:35.9303 Info Adding target AsyncTargetWrapper(Name=ownFile-web)
+2021-11-20 17:13:35.9303 Info Adding target AsyncTargetWrapper(Name=db)
+2021-11-20 17:13:35.9303 Info Closing old configuration.
+2021-11-20 17:13:36.4995 Info Validating config: TargetNames=ownFile-web, db, ConfigItems=64, FilePath=E:\start\asp core\IdentityCore\TemplatePrj\bin\Debug\net6.0\nlog.config

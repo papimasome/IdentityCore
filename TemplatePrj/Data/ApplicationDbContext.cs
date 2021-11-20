@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -21,6 +22,8 @@ namespace TemplatePrj.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            
+            //rename table identity
             builder.HasDefaultSchema("Identity");
             builder.Entity<ApplicationUser>(entity =>
             {
@@ -50,6 +53,11 @@ namespace TemplatePrj.Data
             {
                 entity.ToTable("UserTokens");
             });
+            // end
+           
+            //seed data
+            builder.Seed();
+
         }
     }
 }
