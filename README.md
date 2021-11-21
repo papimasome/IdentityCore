@@ -1,9 +1,6 @@
 # IdentityCore
-add default role and user
-role manager action
-
-user manager action
-
-email service provider
-
-nlog setting
+Add default role and user
+Role manager action
+User manager action
+Email service provider
+nlog setting for logger
